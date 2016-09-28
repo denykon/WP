@@ -1,0 +1,32 @@
+{
+  "name": "webpack-es6",
+  "version": "1.0.0",
+  "description": "webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --hot",
+    "build": "webpack",
+    "test": "karma start"
+  },
+  "author": "Dzianis Kanavalau",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "isparta": "^4.0.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-webpack": "^1.8.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
