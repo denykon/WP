@@ -1,9 +1,9 @@
 module.exports = {
 
-  entry: ['babel-polyfill', 'whatwg-fetch', './app/app'],
+  entry: ['babel-polyfill', 'whatwg-fetch', './src/app'],
   output: {
     path: __dirname + '/public/js',
-    publicPath: __dirname + '/public/js/',
+    publicPath: 'http://localhost:8080/public/js/',
     filename: '[name].js',
   },
 
@@ -17,6 +17,10 @@ module.exports = {
     ]
   },
 
-  devtool: 'source-map'
+  devtool: 'source-map',
+
+  plugins: [
+
+  ]
 
 };

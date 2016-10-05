@@ -1,4 +1,4 @@
-let Data = require('../../app/data.js');
+let Data = require('../../src/data.js');
 
 describe('data class',()=> {
 

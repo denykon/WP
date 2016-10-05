@@ -1,5 +1,4 @@
 // Karma configuration
-// Generated on Tue Sep 27 2016 13:06:27 GMT+0300 (Belarus Standard Time)
 
 let webpackConfig = require('./webpack.config.js');
 
@@ -76,27 +75,7 @@ module.exports = function(config) {
     },
 
     coverageReporter: {
-      includeAllSources: true,
-      // configure the reporter to use isparta for JavaScript coverage
-      // Only on { "karma-coverage": "douglasduteil/karma-coverage#next" }
-      instrumenters: { isparta : require('isparta') },
-      instrumenter: {
-        '**/*.js': 'isparta'
-      },
-      check: {
-        global: {
-          statements: 50,
-          branches: 50,
-          functions: 50,
-          lines: 50
-        },
-        each: {
-          statements: 50,
-          branches: 50,
-          functions: 50,
-          lines: 50
-        }
-      }
+      type: 'text'
     }
 
   });
